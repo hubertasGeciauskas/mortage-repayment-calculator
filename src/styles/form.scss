@@ -146,6 +146,13 @@ a {
   }
 }
 
+h1 {
+  color: var(--color-slate-900);
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
 // Tablet
 @media (min-width: 428px) {
   .title {
