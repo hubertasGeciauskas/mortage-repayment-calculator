@@ -1,0 +1,27 @@
+button {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  align-items: center;
+  background-color: var(--color-lime);
+  color: var(--color-slate-900);
+  font-weight: 700;
+  line-height: 1.25;
+  font-size: 1.1rem;
+  margin: 24px auto 0 auto;
+  width: 100%;
+  border-radius: 999px;
+  height: 56px;
+
+  &:hover {
+    background-color: hsla(61, 70%, 52%, 0.5);
+  }
+}
+
+@media (min-width: 428px) {
+  button {
+    margin: 40px 0 0 0;
+    width: auto;
+    padding: 0 40px;
+  }
+}

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-lime: hsl(61, 70%, 52%);
+  --color-red: hsl(4, 69%, 50%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-slate-100: hsl(202, 86%, 94%);
+  --color-slate-300: hsl(203, 41%, 72%);
+  --color-slate-500: hsl(200, 26%, 54%);
+  --color-slate-700: hsl(200, 24%, 40%);
+  --color-slate-900: hsl(202, 55%, 16%);
+
+  --font-family-primary: "Plus Jakarta Sans", sans-serif;
+  --font-size-body: 16px;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family-primary), sans-serif;
+}
+
+.full-screen {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-slate-100);
+  color: var(--color-slate-900);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+// Tablet
+@media (min-width: 428px) {
+  .full-screen {
+    padding: 40px 0;
+  }
+  .content {
+    max-width: 688px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: var(--color-slate-100);
+    align-items: stretch;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .full-screen {
+    padding: 0 40px;
+  }
+  .content {
+    flex-direction: row;
+    max-width: 1008px;
+    max-height: 705px;
+    background-color: var(--color-white);
+  }
+}
